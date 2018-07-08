@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Application"
+          android:title="@string/applications_menubar"
+          app:showAsAction="always">
+        <menu>
+            <item   android:id="@+id/M3S"
+                    android:title="@string/m3s_menubar" />
+            <item   android:id="@+id/AMOS"
+                    android:title="@string/amos_menubar" />
+        </menu>
+
+    </item>
+
+    <!--<item-->
+        <!--android:id="@+id/Type"-->
+        <!--android:title="@string/type_menubar"-->
+        <!--app:showAsAction="always">-->
+        <!--<menu>-->
+            <!--<item android:id="@+id/BASIC"-->
+                <!--android:title="@string/basic_menubar" />-->
+            <!--<item android:id="@+id/SILVER"-->
+                <!--android:title="@string/silver_menubar" />-->
+            <!--<item android:id="@+id/GOLD"-->
+                <!--android:title="@string/gold_menubar" />-->
+            <!--<item android:id="@+id/PLATINUM"-->
+                <!--android:title="@string/platinum_menubar" />-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

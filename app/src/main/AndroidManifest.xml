@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhanakdidwania.officespace">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true">
+
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme" android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:name=".ApplicationSelection" android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+        <activity android:theme="@style/AppTheme" android:name=".FeaturesDisplayActivity" android:parentActivityName=".ApplicationSelection"
+            android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme" android:name=".LicenseGenerator" android:screenOrientation="portrait"
+            android:parentActivityName=".FeaturesDisplayActivity"/>
+        <activity android:theme="@style/AppTheme" android:name=".LastActivity" android:screenOrientation="portrait"
+            android:parentActivityName=".LicenseGenerator"/>
+    </application>
+
+</manifest>
